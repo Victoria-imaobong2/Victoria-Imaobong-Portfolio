@@ -18,7 +18,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-stone-700 text-base sm:text-lg mb-8 leading-relaxed font-light max-w-lg">
-          I build high-performance web systems, cloud microservices, mobile apps, and smart logistics platforms with thoughtful design and solid architecture.
+          I build high-performance web systems handling fullstack requirements while solving business problems with software engineering with thoughtful design and solid architecture. Have a business idea or project? You should talk to me, lets bring them to life using Software Engineering.
         </p>
 
         {/* Action Buttons */}
