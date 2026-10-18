@@ -44,7 +44,7 @@ async function main() {
         techStack: ['Flutter', 'Dart', 'Firebase', 'Android'],
         githubUrl: 'https://github.com/Victoria-imaobong2/Whatsapp-clone-MobileApp-dev',
         liveUrl: 'https://drive.google.com/file/d/13FkJ2zgRF212ZgTOiyDzdT_9-V0W9wW4/view?usp=drivesdk',
-        imageUrl: null,
+        imageUrl: '/whatsappClone.png',
         featured: true,
       },
       {
@@ -54,7 +54,7 @@ async function main() {
         techStack: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
         githubUrl: 'https://github.com/Victoria-imaobong2/cowrywise-portfolio-project',
         liveUrl: 'https://photography-portfolio-bice-seven.vercel.app/',
-        imageUrl: '/photography Portfolio.png',
+        imageUrl: '/photography portfolio.png',
         featured: false,
       },
       {
@@ -85,7 +85,7 @@ async function main() {
         techStack: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
         githubUrl: 'https://github.com/Victoria-imaobong2/WillmoreWebsite',
         liveUrl: 'https://willmoreconstruct.netlify.app/',
-        imageUrl: '/willmore-construction.png',
+        imageUrl: '/willmore.png',
         featured: false,
       },
       {
