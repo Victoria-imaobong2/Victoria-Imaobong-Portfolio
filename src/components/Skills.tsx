@@ -2,17 +2,15 @@
 
 export default function Skills() {
   const SKILLS_DATA = [
-    {
-      category: 'Languages',
-      items: ['English (Advanced)', 'Igbo (Fluent)', 'German (Basic)'],
-    },
+    
     {
       category: 'Technical & Software Development',
       items: [
+       'Fullstack Software Development (Next.js, Node.js, React.js, Python, HTML, CSS, JavaScript, )',
         'Artificial Intelligence & Machine Learning',
         'UI/UX Design',
         'Requirements Analysis & PRDs',
-        'Software Development (HTML, CSS, JavaScript, Next.js, Python)',
+        'Software Development (Next.js, Node.js, React.js, Python, HTML, CSS, JavaScript, )',
         'Wix & No-Code Systems',
         'UML Diagramming',
       ],
@@ -22,7 +20,7 @@ export default function Skills() {
       items: [
         'Unified Modelling Language',
         'Visual Paradigm',
-        'MySQL & XAMPP',
+        'PostgreSQL, MySQL & XAMPP',
         'Jupyter Notebooks',
         'Lucidchart & Canva',
         'Jira & Google Workspace',
@@ -35,7 +33,11 @@ export default function Skills() {
     },
     {
       category: 'Interests & Focus Areas',
-      items: ['Telemedicine', 'Fullstack Software Development', 'AI Ethics', 'Emerging AI Technologies', 'Tech Entrepreneurship', 'AI Innovation'],
+      items: ['Fullstack Software Development', 'Blockchain', 'Finance', 'Telemedicine', 'AI Ethics', 'Emerging AI Technologies', 'Tech Entrepreneurship', 'AI Innovation'],
+    },
+    {
+      category: 'Languages',
+      items: ['English (Advanced)', 'Igbo (Fluent)', 'German (Basic)'],
     },
   ];
 
