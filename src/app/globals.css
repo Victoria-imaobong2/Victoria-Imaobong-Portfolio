@@ -4,7 +4,10 @@
   :root {
     color-scheme: light !important;
   }
-  html, body {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
     background-color: #fbebe8 !important;
     color: #1c1917 !important;
     min-height: 100vh;
