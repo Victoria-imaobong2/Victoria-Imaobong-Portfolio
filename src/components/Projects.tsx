@@ -42,11 +42,11 @@ export default function Projects() {
   }, [selectedCategory]);
 
   return (
-    <section id="projects" className="py-16 px-6 max-w-6xl mx-auto">
-      <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6 border-b border-rose-200/60 pb-8">
+    <section id="projects" className="py-16 px-6 max-w-7xl mx-auto bg-[#fbebe8]">
+      <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6 border-b border-rose-200/80 pb-8">
         <div>
           <h2 className="text-3xl font-serif text-stone-900 mb-2">Featured Work</h2>
-          <p className="text-stone-500 text-xs tracking-wider uppercase font-medium">Software engineering across web, cloud, and mobile.</p>
+          <p className="text-stone-600 text-xs tracking-wider uppercase font-medium">Software engineering across web, cloud, and mobile.</p>
         </div>
 
         {/* Filter Pills */}
@@ -57,8 +57,8 @@ export default function Projects() {
               onClick={() => setSelectedCategory(cat)}
               className={`px-4 py-1.5 rounded-full text-xs transition ${
                 selectedCategory === cat
-                  ? 'bg-rose-900 text-white font-medium shadow-sm'
-                  : 'bg-white/70 text-stone-600 hover:bg-white border border-rose-200/60'
+                  ? 'bg-stone-900 text-white font-medium shadow-sm'
+                  : 'bg-white/80 text-stone-700 hover:bg-white border border-rose-200/80'
               }`}
             >
               {cat}
@@ -68,17 +68,17 @@ export default function Projects() {
       </div>
 
       {loading ? (
-        <div className="text-center py-20 text-stone-400 text-sm font-serif italic">Loading curated projects...</div>
+        <div className="text-center py-20 text-stone-500 text-sm font-serif italic">Loading projects...</div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((p) => (
             <div
               key={p.id}
-              className="bg-white/90 backdrop-blur-sm border border-rose-200/60 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-rose-900/5 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1"
+              className="bg-white/90 backdrop-blur-sm border border-rose-200/80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-rose-900/5 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1"
             >
               <div>
-                {/* Image Banner */}
-                <div className="h-48 bg-[#f4deda]/50 overflow-hidden relative border-b border-rose-100">
+                {/* Image / Header Banner */}
+                <div className="h-48 bg-[#f4deda]/60 overflow-hidden relative border-b border-rose-100 flex items-center justify-center p-6 text-center">
                   {p.imageUrl ? (
                     <img
                       src={p.imageUrl}
@@ -86,14 +86,14 @@ export default function Projects() {
                       className="w-full h-full object-cover hover:scale-105 transition duration-500"
                     />
                   ) : (
-                    <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-[#f7e6e3]/60">
-                      <span className="font-serif text-base font-semibold text-stone-800 mb-1">
+                    <div className="flex flex-col items-center justify-center">
+                      <span className="font-serif text-lg font-bold text-rose-950 mb-1">
                         {p.title}
                       </span>
-                      <span className="text-[11px] text-stone-400 font-sans uppercase tracking-widest">No Preview Image</span>
+                      <span className="text-[10px] text-rose-700 uppercase tracking-widest font-medium">Project Preview</span>
                     </div>
                   )}
-                  <span className="absolute top-3 left-3 text-[10px] uppercase font-medium tracking-wider px-3 py-1 rounded-full bg-white/95 text-rose-950 border border-rose-200/80 shadow-sm">
+                  <span className="absolute top-3 left-3 text-[10px] uppercase font-medium tracking-wider px-3 py-1 rounded-full bg-white text-rose-950 border border-rose-200/80 shadow-sm">
                     {p.category}
                   </span>
                 </div>
@@ -108,13 +108,13 @@ export default function Projects() {
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-1.5 pt-3 mb-5 border-t border-rose-100">
                   {p.techStack.map((tech) => (
-                    <span key={tech} className="text-[10px] font-sans text-stone-700 bg-rose-50/80 px-2.5 py-1 rounded-full border border-rose-200/50">
+                    <span key={tech} className="text-[10px] font-sans text-stone-700 bg-rose-50 px-2.5 py-1 rounded-full border border-rose-200/60">
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                {/* Dual Action Buttons */}
+                {/* Dual Buttons */}
                 <div className="grid grid-cols-2 gap-2 pt-2 border-t border-rose-100">
                   {p.githubUrl ? (
                     <a
